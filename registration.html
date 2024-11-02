@@ -1,0 +1,90 @@
+<!-- Description: Fishers Registration page. Whereas a customer's info is loaded when the app 
+                  is downladed, fishers must include all business information for licencing. Like the 
+                  sellers page, this data will be saved to a database eventually, but for now will  
+                  display input on page. Future development may see fishers connect their banking info 
+                  for direct payment and possibly ratings from customers.
+     Author:DC Elliott
+     Date: 2024-10-31
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fishers Registration</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/regStyles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">FIRST CATCH</div>
+            <ul>
+                <li><a href="story.html">Our Story</a></li>
+                <li><a href="registration.html">Fishers Registration</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Fisher's Registration</h1>
+        <form id="registrationForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="enterprise">Enterprise:</label>
+            <input type="text" id="enterprise" required>
+
+            <label for="street">Street Address:</label>
+            <input type="text" id="street" required>
+
+            <label for="town">Town:</label>
+            <input type="text" id="town" required>
+
+            <label for="province">Province:</label>
+            <input type="text" id="province" required>
+            <br>
+
+            <label for="postalCode">Postal Code:</label>
+            <input type="text" id="postalCode" required>
+
+            <label for="homeport">Homeport:</label>
+            <input type="text" id="homeport" required>
+
+            <label for="licenceNumber">Licence Number:</label>
+            <input type="text" id="licenceNumber" required>
+
+            <label for="species">Species Fished:</label>
+            <input type="text" id="species" required>
+
+            <button type="submit">Register Fisher</button>
+        </form>
+
+        <h1>Registered Fishers</h1>
+        <table id="registrationTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Enterprise</th>
+                    <th>Address</th>
+                    <th>Homeport</th>
+                    <th>Licence Number</th>
+                    <th>Species Fished</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+        <div class = "home"><a href="index.html">Return to Main</a></div>
+
+        <img src="images/sky.png" data-speedx="0.3" data-speedy="0" alt="sky" class="sky">
+        <img src="images/waves_layer3.png" data-speedx="0.2" data-speedy="0" alt="bottom" class="parallax waves_layer3">
+    </main>
+
+    <script src="scripts/registration.js"></script>
+</body>
+</html>

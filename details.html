@@ -1,0 +1,54 @@
+<!-- Description: Page shows Bill of sale for selected item, allows for quantity and diplays total.
+     Author:DC Elliott
+     Date: 2024-10-28
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sale Details</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/detailStyles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FIRST CATCH</div>
+            <ul>
+                <li><a href="story.html">Our Story</a></li>
+                <li><a href="registration.html">Fishers Registration</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Bill of Sale</h1>
+        <div class="bill" id="itemDetails">
+        
+            <p><strong>Item#:</strong> <span id="itemNumber"></span></p>
+            <p><strong>Species:</strong> <span id="species"></span></p>
+            <p><strong>Time of Catch:</strong> <span id="timeOfCatch"></span></p>
+            <p><strong>Location:</strong> <a id="location" href="" target="_blank">Map</a></p>
+            <p><strong>Fisher:</strong> <span id="fisher"></span></p>
+            <br>
+            <p><strong>Price (per lb):</strong> $<span id="price"></span></p>
+            <label for="quantity">Quantity (max 999):</label>
+            <input type="number" id="quantity" min="1" max="999" value="1">
+            <hr>
+            <p><strong>Total:</strong> $<span id="total">0.00</span></p>
+        </div>
+        <div class = "home"><a href="index.html">Return to Main</a></div>
+
+     <img src="images/sky.png" data-speedx="0.3" data-speedy="0" alt="sky" class="sky">
+     <img src="images/waves_layer3.png" data-speedx="0.2" data-speedy="0" alt="bottom" class="parallax waves_layer3">
+
+</main>
+
+    <script src="scripts/details.js"></script>
+
+   
+</body>
+</html>

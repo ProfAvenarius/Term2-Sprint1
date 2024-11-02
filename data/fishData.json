@@ -1,0 +1,38 @@
+[
+    {
+        "itemNumber": 1011,
+        "species": "COD",
+        "pricePerLb": 4.99,
+        "timeOfCatch": "05/21/24@08:36:45",
+        "location": "https://www.google.com/maps?q=47.3385,-52.1361",
+        "fisher": "BOB LOBLAW"
+    },
+    {
+        "itemNumber": 1012,
+        "species": "CAPLIN",
+        "pricePerLb": 2.50,
+        "timeOfCatch": "05/22/24@09:12:32",
+        "location": "https://www.google.com/maps?q=48.8795,-53.0047",
+        "fisher": "ALICE FINN"
+    },
+
+    {
+        "itemNumber": 1013,
+        "species": "ARCTIC CHAR",
+        "pricePerLb": 12.99,
+        "timeOfCatch": "05/23/24@06:42:06",
+        "location": "https://www.google.com/maps?q=49.8609,-53.6670",
+        "fisher": "CHARLES KING"
+    },
+
+    {
+        "itemNumber": 1014,
+        "species": "CRAB",
+        "pricePerLb": 5.99,
+        "timeOfCatch": "05/23/24@06:14:17",
+        "location": "https://www.google.com/maps?q=46.5766,-54.6690",
+        "fisher": "FRANK_CASTLE"
+    }
+   
+    
+]

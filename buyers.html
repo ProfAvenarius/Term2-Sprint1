@@ -1,0 +1,59 @@
+<!-- Description:Buyers page - all data is passed from a json file. Original intention was to 
+     add to the json file from the sellers page and have this page update. This will be th nxt step.
+     The item tag brings you to the purchase page, the maps link to google maps of site of catch. 
+     Author:David C Elliott
+     Date: 2024-10-24 -> 2024-10-31
+-->
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish For Sale</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/buyStyles.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">FIRST CATCH</div>
+            <ul>
+                <li><a href="story.html">Our Story</a></li>
+                <li><a href="registration.html">Fishers Registration</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Fish For Sale:</h1>
+        <table id="fishTable">
+            <thead>
+                <tr>
+                    <th>Item#</th>
+                    <th>Species</th>
+                    <th>Price (per lb)</th>
+                    <th>Time of Catch</th>
+                    <th>Location</th>
+                    <th>Fisher</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+            </tbody>
+        </table>
+        <div class = "home"><a href="index.html">Return to Main</a></div>
+       
+        <img src="images/sky.png" data-speedx="0.3" data-speedy="0" alt="sky" class="sky">
+        <img src="images/waves_layer3.png" data-speedx="0.2" data-speedy="0" alt="bottom" class="parallax waves_layer3">
+    </main>
+
+    <script src="scripts/table.js"></script>
+</body>
+</html> 
+

@@ -1,0 +1,72 @@
+<!-- Description: This is the Sell side page, where Fishers can inout their catches.
+                  The initial intent was to ammend this entry to the fishData.json file
+                  which would immediately be visable on the buyers page.  This was not accomplished,
+                  instead the entries are parsed and combined with system time and displayed
+                  right here on the same page in the correct format.
+     Author: David C Elliott
+     Date: 2024-10-21 -> 2024-10-31
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sellers</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/sellStyles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FIRST CATCH</div>
+            <ul>
+                <li><a href="story.html">Our Story</a></li>
+                <li><a href="registration.html">Fishers Registration</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Seller's Input</h1>
+        <form id="fishForm">
+            <label for="species">Species:</label>
+            <input type="text" id="species" required>
+
+            <label for="price">Price (per lb):</label>
+            <input type="number" id="price" step="0.01" required>
+
+            <label for="fisher">Fisher:</label>
+            <input type="text" id="fisher" required>
+
+            <label for="location">Location (Google Map Link):</label>
+            <input type="text" id="location" required>
+
+            <button type="submit">Add Fish</button>
+        </form>
+        <!--Below displays the input above . -->
+        <h1>Current Listings</h1>
+        <table id="sellersTable"> 
+            <thead>
+                <tr>
+                    <th>Item#</th>
+                    <th>Species</th>
+                    <th>Price (per lb)</th>
+                    <th>Time of Catch</th>
+                    <th>Location</th>
+                    <th>Fisher</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <div class = "home"><a href="index.html">Return to Main</a></div>
+
+        <img src="images/sky.png" data-speedx="0.3" data-speedy="0" alt="sky" class="sky">
+        <img src="images/waves_layer3.png" data-speedx="0.2" data-speedy="0" alt="bottom" class="parallax waves_layer3">
+    </main>
+
+    <script src="scripts/sellers.js"></script>
+</body>
+</html>

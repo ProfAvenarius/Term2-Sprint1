@@ -1,0 +1,63 @@
+<!-- Description: SPRINT1 SD12 a webpage design to facilitate sales of fish direct to consumer, welcome to the 
+                  the landing page for First Catch. Where this began is very different than the end result, the 
+                  original design began as a 'parallax' effect,but it did not produce the effect desired, and after
+                  much play, the final design combined css animation with js effects. There is some unnecessary  
+                  and duplicative code, due to this process.
+                  All coding was done on VS CODE using Live Server and tested in Chrome
+     Author: David C Elliott
+     Date: 2024-10-22 - 2024-10-31
+-->
+<!--  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Catch Home</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    <link rel="stylesheet" href="styles/styles.css"> <!--One css style sheet used for this page, and a single font
+                                                         other pages use the main style sheet in adddition to their 
+                                                         own.-->
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FIRST CATCH</div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="story.html">Our Story</a>  
+                    </li>
+                    <li>
+                        <a href="registration.html">Fishers Registration</a>  
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>  
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+    </header>
+        <!-- ALL images used (other than photos in our story) were created 
+            using Google Gemini Image for use on this project. Editing software was used to 
+            disect the image into individual layers to use in this effect. -->
+<main>
+    <div class="vignette"></div>
+    <img src="images/sky.png" data-speedx = "0.3" data-speedy = "0" alt="sky" class="sky">
+    <img src="images/waves_layer1.png" data-speedx = "0.3" data-speedy = "0" alt="top" class="parallax waves_layer1">
+    <img src="images/waves_layer2.png" data-speedx = "-0.3" data-speedy = "0" alt="middle" class="parallax waves_layer2">
+    <div class = "boxleft" ><a href="sellers.html">SELL FISH HERE</a></div> 
+    <div class = "boxright"><a href="buyers.html">BUY FISH HERE</a></div>
+    <img src="images/waves_layer3.png" data-speedx = "0.2" data-speedy = "0" alt="bottom" class="parallax waves_layer3">
+    <img src="images/fish.png" data-speedx = "0.8" alt="Cod" data-speedy = "0.2" data-rotation="0.08" class="parallax fish">
+    <img src="images/boat.png" data-speedx = "0.05" alt="boat" data-speedy = "0.2" class="boat">
+    <img src="images/wharf.png" data-speedx = "0.01" alt="top" data-speedy = "0" class="parallax wharf">
+</main>
+   
+
+
+<script src="scripts/app.js"></script>
+</body>
+</html>
